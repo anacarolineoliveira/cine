@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="601dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/categoriaTxt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:text="Lançamentos"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV1"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categoriaTxt1"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/filme1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/matrix"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme1"
+                        app:layout_constraintTop_toTopOf="@id/filme1"
+                        app:srcCompat="@drawable/sonic"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme2"
+                        app:layout_constraintTop_toTopOf="@id/filme2"
+                        app:srcCompat="@drawable/filme3"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme3"
+                        app:layout_constraintTop_toTopOf="@id/filme3"
+                        app:srcCompat="@drawable/filme4"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme4"
+                        app:layout_constraintTop_toTopOf="@id/filme4"
+                        app:srcCompat="@drawable/filme5"
+                        tools:ignore="MissingConstraints" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/categoriaTxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Mais Vistos"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/categoriaTxt1"
+                app:layout_constraintTop_toBottomOf="@id/horizontalSV1" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV2"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/categoriaTxt2"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/filme6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/matrix"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme6"
+                        app:layout_constraintTop_toTopOf="@id/filme6"
+                        app:srcCompat="@drawable/sonic"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme7"
+                        app:layout_constraintTop_toTopOf="@id/filme7"
+                        app:srcCompat="@drawable/filme3"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme8"
+                        app:layout_constraintTop_toTopOf="@id/filme8"
+                        app:srcCompat="@drawable/filme4"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme9"
+                        app:layout_constraintTop_toTopOf="@id/filme9"
+                        app:srcCompat="@drawable/filme5"
+                        tools:ignore="MissingConstraints" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/categoriaTxt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Novidades"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@id/categoriaTxt2"
+                app:layout_constraintTop_toBottomOf="@id/horizontalSV2" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalSV3"
+                android:layout_width="409dp"
+                android:layout_height="206dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/categoriaTxt3"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/filme11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/matrix"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme11"
+                        app:layout_constraintTop_toTopOf="@id/filme11"
+                        app:srcCompat="@drawable/sonic"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme12"
+                        app:layout_constraintTop_toTopOf="@id/filme12"
+                        app:srcCompat="@drawable/filme3"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme13"
+                        app:layout_constraintTop_toTopOf="@id/filme13"
+                        app:srcCompat="@drawable/filme4"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageButton
+                        android:id="@+id/filme15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:layout_constraintStart_toEndOf="@id/filme14"
+                        app:layout_constraintTop_toTopOf="@id/filme14"
+                        app:srcCompat="@drawable/filme5"
+                        tools:ignore="MissingConstraints" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
